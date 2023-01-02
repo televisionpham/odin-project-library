@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: #1e40af;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;    
+    height: 4rem;
+}
+
+.container {
+    max-width: 1200px;
+    width: min(1200px, 100vw);
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;  
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #16a34a;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+.list {
+    background-color: white;
+    height: calc(100vh - 4rem);     
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+#new-book-dialog {    
+    position: fixed;
+    top: 5rem;
+    width: 400px;
+    left: calc(50vw - 200px);
+    border: none;
+}
+
+form {
+    padding: 1rem;    
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control input {
+    display: block;
+    font-size: 1rem;
+    padding: 0.2rem 0.25rem;    
+    width: 100%;
+}
+
+.card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 16rem;
+    width: 16rem;
+    padding: 1rem;   
+}
+
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    height: calc(100% - 4rem);
+    font-size: 0.8rem;    
+}
+
+.card-footer {
+    height: 3rem;
+    float: right;
+}
